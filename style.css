@@ -48,31 +48,34 @@ input:valid {
 }
 
 .post {
-    flex-grow: 1;
+    flex-grow: 2;
     flex-basis: 80%;
+    flex-shrink: 2;
 }
 
 .action-wrapper {
     display: flex;
     padding-top: 10px;
     justify-content: space-around;
+    flex-wrap: wrap;
     font-size: 14px;
     align-items: center;
     color: #666;
 }
 
-.action-wrapper div img {
+.action-wrapper .item img {
     width: 20px;
 }
 
-.action-wrapper div {
+.action-wrapper .item {
     display: flex;
     align-items: center;
     gap: 6px;
     padding: 8px 10px;
+    flex-grow: 1;
 }
 
-.action-wrapper div:hover {
+.action-wrapper .item:hover {
     background-color: whitesmoke;
     border-radius: 15px;
     cursor: pointer;
