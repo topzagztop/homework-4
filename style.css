@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +18,16 @@ input {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    border: 1px solid whitesmoke;
+    border: none;
     padding: 10px;
 }
 
 input:valid {
     background-color: whitesmoke;
+}
+
+input:invalid {
+    background-color: burlywood;
 }
 
 .container {
@@ -37,7 +43,10 @@ input:valid {
     gap: 12px;
     row-gap: 12px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #e3e3e3
+}
+
+hr {
+    border: 1px solid #f1f1f1;
 }
 
 .profile {
@@ -55,28 +64,47 @@ input:valid {
 
 .action-wrapper {
     display: flex;
-    padding-top: 10px;
-    justify-content: space-around;
+    padding-top: 8px;
+    justify-content: space-between;
     flex-wrap: wrap;
     font-size: 14px;
     align-items: center;
     color: #666;
 }
 
-.action-wrapper .item img {
-    width: 20px;
+.action-wrapper .item i {
+    font-size: 16px;
 }
 
 .action-wrapper .item {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     padding: 8px 10px;
     flex-grow: 1;
+    justify-content: center;
 }
 
 .action-wrapper .item:hover {
     background-color: whitesmoke;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.action-wrapper .live-wrapper i {
+    color: #ff0000;
+    position: relative;
+    top: 1px;
+}
+
+.action-wrapper .photo-wrapper i {
+    color: #49e700;
+    position: relative;
+    top: 1px
+}
+
+.action-wrapper .reels-wrapper i {
+    color: #ff0080;
+    position: relative;
+    top: 1px
 }
